@@ -1,0 +1,48 @@
+import turtle #导入绘图模块
+
+#绘制大圆
+turtle.pensize(10) #设置笔触为10个像素点
+turtle.pencolor('red') #设置画笔颜色为红色
+turtle.circle(105) #设置大圆的半径为105个像素点
+
+turtle.penup() #抬起笔
+turtle.left(90) #将笔尖方向左转90度
+turtle.forward(50) #往前移动50个像素点
+turtle.pendown() #落笔
+turtle.right(90) #将笔尖右转90度
+
+#绘制小圆
+turtle.fillcolor('blue') #设置小圆的填充颜色为蓝色
+turtle.begin_fill() #在正式绘制开始前开启填充功能
+turtle.circle(55) #绘制小圆，半径为55个像素点
+turtle.end_fill() #在绘制结束后停止填充
+
+#绘制五角星
+turtle.pensize(1) #设置笔触为1个像素点
+turtle.pencolor('white') #设置画笔颜色为白色
+turtle.fillcolor('white') #设置填充颜色为白色
+
+#将笔尖调整到合适的位置开始绘制五角星
+turtle.left(90) 
+turtle.penup()
+turtle.forward(70)
+turtle.left(90)
+turtle.forward(48)
+turtle.right(180)
+turtle.pendown()
+
+
+turtle.begin_fill() #在正式绘制开始前开启填充功能
+i = 0
+while i < 5:
+    turtle.forward(100)
+    turtle.right(144)
+    i+=1
+turtle.end_fill() #在绘制结束后停止填充
+
+turtle.hideturtle() #隐藏笔尖
+
+
+
+
+
